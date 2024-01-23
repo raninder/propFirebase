@@ -1,0 +1,51 @@
+/* Overview component */
+
+
+.overview-heading{
+  display: flex;
+  justify-content: space-between;
+}
+.mls input{
+  background-color:rgb(181, 127, 231);
+  margin-right:10px;
+  border-radius: 5px;
+  padding:6px;
+}
+
+ .icon1{
+  height: 50px;
+}
+
+.overview-content{
+  margin-top:10px;
+}
+hr{
+  width:100%;
+}
+
+.score{
+  display:flex;
+}
+
+.walk{
+  display: flex;
+  margin: 30px;
+}
+
+.walkscore{
+  display: flex;
+  flex-direction: column;
+  margin-left:20px;
+  justify-content: space-between;
+}
+
+
+@media only screen and (max-width: 600px){
+  .walk{
+    margin: 10px;
+  }
+  .walkscore{ 
+    margin-left:10px;
+
+  }
+}

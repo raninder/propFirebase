@@ -1,0 +1,43 @@
+/* price component */
+iframe{
+  height: 130px;
+  width:100%;
+  border:0;
+}
+.desc-container{
+  display: flex;
+  background-color: white;
+}
+.price-container{
+  width:60%;
+  padding:10px;
+}
+.price-icons{
+  margin:5px;
+}
+.map{
+  width:40%;
+  padding:10px;
+}
+
+.price-container>.price{
+  font-size: 18px;
+  color:blueviolet;
+}
+.price-container>.price-icons, .price-container>.icon{
+  font-family:Arial, Helvetica, sans-serif;
+}
+.price-container span{
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 600px){
+  .price-container{
+    width:45%;
+    padding:10px;
+  }
+  .map{
+    width:45%;
+  }
+
+  }

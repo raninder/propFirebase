@@ -1,0 +1,39 @@
+  /* sidebar component */
+
+	.sidebar .top{
+		text-align: center;
+		margin:20px;
+	}
+	.payment{
+		background-color: white;
+		display: flex;
+		flex-direction: column;
+	}
+	.payment>.head{
+		display: flex;
+		justify-content: space-between;
+		margin:10px;
+	}
+	.head button{
+		background:transparent;
+		border:none;
+		color:blueviolet;
+	}
+	.pre{
+    background-color: blueviolet;
+    border: none;
+    color: white;
+    padding: 25px;
+    text-align: center;
+    font-size: 16px;
+    margin: 10px 2px;
+    border-radius: 20px;
+    width: 100%;
+  }
+	.range-container{
+		margin-top:10px;
+		background-color: white;
+		display: flex;
+		flex-direction: column;
+	}
+	

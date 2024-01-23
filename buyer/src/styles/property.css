@@ -1,0 +1,36 @@
+/* Hero component */
+.main{
+  display: flex;
+  flex-direction: row;
+}
+.left{
+  margin:20px;
+  width: 60%;
+}
+.right{
+  margin:20px;
+  width: 40%;
+}
+
+/* phones */
+@media only screen and (max-width: 600px){
+  .main{
+    display: flex;
+    flex-direction: column;
+  }
+  .left,.right{
+    margin:10px;
+    width: 100%;
+  }
+
+}
+/* @media only screen and (min-width: 600px){
+  .left{
+    margin:10px;
+    width: 60%;
+  }
+  .right{
+    margin:10px;
+    width: 40%;
+  }
+}  */

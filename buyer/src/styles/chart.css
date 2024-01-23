@@ -1,0 +1,34 @@
+/* chart component */
+.piechart{
+  display: flex;
+}
+.chart{
+  width:60%;
+  padding-left:50px;
+  text-align:right;
+  font-size: 12px;
+}
+.chartvalue{
+  width:50%;
+  padding: 40px;
+  text-align: left;
+}
+
+
+.top>h3, .chartvalue>h6{
+  color:grey;
+}
+
+/* .chart-table{
+  border-collapse: separate;
+  border-spacing: 20px;
+ 
+}
+.chart-table td{
+  padding-right:40px;
+  white-space: nowrap;
+}  */
+
+
+
+

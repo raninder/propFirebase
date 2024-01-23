@@ -1,0 +1,51 @@
+/* details component */
+.rooms{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  position:relative;
+}
+.rooms1, .rooms2{
+  width:50%;
+  margin-bottom:20px;
+}
+
+.top>button{
+    background-color: blueviolet;
+    border: none;
+    color: white;
+    padding: 25px;
+    text-align: center;
+    font-size: 16px;
+    margin: 10px 2px;
+    border-radius: 20px;
+    width: 100%;
+  }
+  h4{
+    margin:10px;
+  }
+
+  .align{
+    margin-left:10px;
+  }
+  .rooms p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 11px;
+    margin:5px;
+  }
+  .bdiv1{
+    display:inline-block;
+    width:130px;
+    height:200px;
+    position:absolute;
+    top:20px; 
+  }
+
+  .bdiv{
+    display:inline-block;
+    width:170px;
+    height:220px;
+    position:absolute;
+    top:40px; 
+   
+  }

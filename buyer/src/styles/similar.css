@@ -1,0 +1,27 @@
+/* similar component */
+.homes{
+  display:flex;
+}
+.home-card{
+  margin:10px;
+}
+.home{
+  width:90%;
+  font-size: 12px;
+}
+.home-card>.price{
+  color:blueviolet;
+}
+.home-card > .price-icons{
+ font-size: 10px;
+}
+.home-card > .icon{
+  font-size: 10px;
+  color:grey;
+}
+
+.google-map{
+  margin-top:20px;
+  border:1px solid lightgrey;
+  border-radius: 10px;
+}

@@ -2,7 +2,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSquareParking,faCircle} from "@fortawesome/free-solid-svg-icons";
 import '../styles/highlights.css'
 
-const Highlights = () => {
+const Highlights = ({data}) => {
+	console.log("props data", data[0].parking);
 	return (
 		<div className="highlights-container">
 			<h3> Home Highlights</h3>
@@ -21,13 +22,13 @@ const Highlights = () => {
 
 				<div className="column2">
 					<div className="key">
-						<span className="key-icon">4 Parking Spaces</span>
+						<span className="key-icon">{data[0].parking}</span>
 					</div>
 					<div className="key">
-					<span className="key-icon">full,finished</span>
+					<span className="key-icon">{data[0].basement}</span>
 					</div>
 					<div className="key">
-						<span className="key-icon">Yes</span>
+						<span className="key-icon">{data[0].cooling}</span>
 					</div>
 				</div>
 
@@ -45,13 +46,13 @@ const Highlights = () => {
 
 				<div className="column4">
 					<div className="key">
-						<span className="key-icon">None</span>
+						<span className="key-icon">{data[0].HOA}</span>
 					</div>
 					<div className="key">
-					<span className="key-icon">235$</span>
+					<span className="key-icon">{data[0].price}</span>
 					</div>
 					<div className="key">
-						<span className="key-icon">70 days ago</span>
+						<span className="key-icon">{data[0].listed}</span>
 					</div>
 				</div>
 			</div>	

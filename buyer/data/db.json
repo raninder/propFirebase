@@ -1,0 +1,102 @@
+{
+	"properties":[
+  {
+    "id": 1,
+    "cover": "https://cache19.housesigma.com/file/pix-treb/W7368410/b6e4f_1.jpg?b556148b",
+    "img2":"https://cache-e13.housesigma.com/file/pix-treb/W7368410/b6e4f_4.jpg?b556148b",
+		"img3":"https://cache-e14.housesigma.com/file/pix-treb/W7368410/b6e4f_5.jpg?b556148b",
+		"location": "6323 St Jamestown, Toronto",
+    "category": "For Sale",
+    "price": "$525,000",
+    "type": "Homes & Villas",
+		"walkScore":"70/100",
+		"bikeScore":"83/100",
+		"busScore":"88/100",
+		"bedrooms":3,
+		"washrooms":1,
+		"area":"1100 Sqft"
+  },
+  {
+    "id": 2,
+    "cover": "https://cache19.housesigma.com/file/pix-treb/W7368410/b6e4f_1.jpg?b556148b",
+		"img2":"https://cache-e13.housesigma.com/file/pix-treb/W7368410/b6e4f_4.jpg?b556148b",
+		"img3":"https://cache-e14.housesigma.com/file/pix-treb/W7368410/b6e4f_5.jpg?b556148b",
+    "location": "5698 Zirak Road, NewYork",
+    "category": "For Sale",
+    "price": "$525,000",
+    "type": "Condos",
+		"walkScore":"70/100",
+		"bikeScore":"83/100",
+		"busScore":"88/100",
+		"bedrooms":3,
+		"washrooms":1,
+		"area":"1100 Sqft"
+  },
+  {
+    "id": 3,
+    "cover": "https://cache19.housesigma.com/file/pix-treb/W7368410/b6e4f_1.jpg?b556148b",
+		"img2":"https://cache-e13.housesigma.com/file/pix-treb/W7368410/b6e4f_4.jpg?b556148b",
+		"img3":"https://cache-e14.housesigma.com/file/pix-treb/W7368410/b6e4f_5.jpg?b556148b",
+    "location": "5624 Mooker Market, USA",
+    "category": "For Rent",
+    "price": "$525,000",
+    "type": "Offices",
+		"walkScore":"70/100",
+		"bikeScore":"83/100",
+		"busScore":"88/100",
+		"bedrooms":3,
+		"washrooms":1,
+		"area":"1100 Sqft"
+  },
+  {
+    "id": 4,
+    "cover": "https://cache19.housesigma.com/file/pix-treb/W7368410/b6e4f_1.jpg?b556148b",
+		"img2":"https://cache-e13.housesigma.com/file/pix-treb/W7368410/b6e4f_4.jpg?b556148b",
+		"img3":"https://cache-e14.housesigma.com/file/pix-treb/W7368410/b6e4f_5.jpg?b556148b",
+    "location": "5621 Liverpool, London",
+    "category": "For Sale",
+    "price": "$525,000",
+    "type": "Homes & Villas",
+		"walkScore":"70/100",
+		"bikeScore":"83/100",
+		"busScore":"88/100",
+		"bedrooms":3,
+		"washrooms":1,
+		"area":"1100 Sqft"
+  },
+  {
+    "id": 5,
+    "cover": "https://cache19.housesigma.com/file/pix-treb/W7368410/b6e4f_1.jpg?b556148b",
+		"img2":"https://cache-e13.housesigma.com/file/pix-treb/W7368410/b6e4f_4.jpg?b556148b",
+		"img3":"https://cache-e14.housesigma.com/file/pix-treb/W7368410/b6e4f_5.jpg?b556148b",
+    "location": "210 Montreal Road, Canada",
+    "category": "For Rent",
+    "price": "$4,850",
+    "type": "Commercial",
+		"walkScore":"70/100",
+		"bikeScore":"83/100",
+		"busScore":"88/100",
+		"bedrooms":3,
+		"washrooms":1,
+		"area":"1100 Sqft"
+  },
+  {
+    "id": 6,
+    "cover": "https://cache19.housesigma.com/file/pix-treb/W7368410/b6e4f_1.jpg?b556148b",
+		"img2":"https://cache-e13.housesigma.com/file/pix-treb/W7368410/b6e4f_4.jpg?b556148b",
+		"img3":"https://cache-e14.housesigma.com/file/pix-treb/W7368410/b6e4f_5.jpg?b556148b",
+    "location": "210 Zirak Road, Canada",
+    "category": "For Sale",
+    "price": "$2,742",
+    "type": "Apartment",
+		"walkScore":"70/100",
+		"bikeScore":"83/100",
+		"busScore":"88/100",
+		"bedrooms":3,
+		"washrooms":1,
+		"area":"1100 Sqft"
+  }
+]
+}
+
+

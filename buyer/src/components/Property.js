@@ -12,7 +12,7 @@ import Nearby from "./Nearby";
 import {useState, useEffect} from 'react'
 import '../styles/property.css'
 
-import { collection, onSnapshot } from "firebase/firestore"
+import { collection, onSnapshot, doc, getDoc } from "firebase/firestore"
 import {db} from '../firebase';
 
 // const Property = ({ id, cover,price,location }) => {
@@ -24,21 +24,33 @@ import {db} from '../firebase';
   
   console.log("final data",data)
 
-  //get data from firebase
+  //get all data from firebase collection highlights
   const propRef = collection(db, "highlights")
   
-    useEffect (()=> {
-      onSnapshot(propRef, snapshot => {
-        setHighData(snapshot.docs.map(doc => {
-          return {
-            id: doc.id,
-            ...doc.data()
-          }
-        }))
-      })
-    }, [])
+    // useEffect (()=> {
+    //   onSnapshot(propRef, snapshot => {
+    //     setHighData(snapshot.docs.map(doc => {
+    //       return {
+    //         id: doc.id,
+    //         ...doc.data()
+    //       }
+    //     }))
+    //   })
+    // }, [])
 
-    console.log("highdata", highData)
+    // console.log("highdata", highData)
+
+    //get single document from higlights collection in firebase
+
+    const docRef = doc(db, "highlights", id)
+      // getDoc(docRef)
+      // .then ((doc)=>
+      // console.log("single  ", doc.data(),doc.id))
+
+      onSnapshot(docRef, (doc) => {
+        console.log("single  ", doc.data(),doc.id)
+        setHighData(doc.data())
+      })
 
   return ( 
     <div>

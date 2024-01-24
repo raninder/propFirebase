@@ -3,7 +3,7 @@ import { faSquareParking,faCircle} from "@fortawesome/free-solid-svg-icons";
 import '../styles/highlights.css'
 
 const Highlights = ({data}) => {
-	console.log("props data", data[0].parking);
+	console.log("props data", data.parking);
 	return (
 		<div className="highlights-container">
 			<h3> Home Highlights</h3>
@@ -22,13 +22,13 @@ const Highlights = ({data}) => {
 
 				<div className="column2">
 					<div className="key">
-						<span className="key-icon">{data[0].parking}</span>
+						<span className="key-icon">{data.parking}</span>
 					</div>
 					<div className="key">
-					<span className="key-icon">{data[0].basement}</span>
+					<span className="key-icon">{data.basement}</span>
 					</div>
 					<div className="key">
-						<span className="key-icon">{data[0].cooling}</span>
+						<span className="key-icon">{data.cooling}</span>
 					</div>
 				</div>
 
@@ -46,13 +46,13 @@ const Highlights = ({data}) => {
 
 				<div className="column4">
 					<div className="key">
-						<span className="key-icon">{data[0].HOA}</span>
+						<span className="key-icon">{data.HOA}</span>
 					</div>
 					<div className="key">
-					<span className="key-icon">{data[0].price}</span>
+					<span className="key-icon">{data.price}</span>
 					</div>
 					<div className="key">
-						<span className="key-icon">{data[0].listed}</span>
+						<span className="key-icon">{data.listed}</span>
 					</div>
 				</div>
 			</div>	

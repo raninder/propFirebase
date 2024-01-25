@@ -12,46 +12,30 @@ import Nearby from "./Nearby";
 import {useState, useEffect} from 'react'
 import '../styles/property.css'
 
-import { collection, onSnapshot, doc, getDoc } from "firebase/firestore"
+import { onSnapshot, doc } from "firebase/firestore"
 import {db} from '../firebase';
 
-// const Property = ({ id, cover,price,location }) => {
+
   const Property = () => {
   const [highData, setHighData] = useState([]);
+ 
+
   const {id} = useParams(); 
-  console.log("id",id)
+
 	const {data,isPending,error} = useFetch('http://localhost:8000/properties/'+id);
   
-  console.log("final data",data)
 
-  //get all data from firebase collection highlights
-  const propRef = collection(db, "highlights")
-  
-    // useEffect (()=> {
-    //   onSnapshot(propRef, snapshot => {
-    //     setHighData(snapshot.docs.map(doc => {
-    //       return {
-    //         id: doc.id,
-    //         ...doc.data()
-    //       }
-    //     }))
-    //   })
-    // }, [])
+  const docRef = doc(db, "highlights", id)
 
-    // console.log("highdata", highData)
+  useEffect(()=>{
 
     //get single document from higlights collection in firebase
-
-    const docRef = doc(db, "highlights", id)
-      // getDoc(docRef)
-      // .then ((doc)=>
-      // console.log("single  ", doc.data(),doc.id))
-
       onSnapshot(docRef, (doc) => {
-        console.log("single  ", doc.data(),doc.id)
         setHighData(doc.data())
       })
 
+    },[docRef])
+     
   return ( 
     <div>
       {isPending && <div>Loading....</div>}
@@ -63,7 +47,7 @@ import {db} from '../firebase';
           <Price data={data} />
           <Overview data={data}></Overview>
           <Highlights data={highData}/>
-          <Details />
+          <Details id={id}/>
           <Similar />
           <Nearby />
         </div>

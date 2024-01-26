@@ -18,7 +18,7 @@ import { useLocation } from 'react-router-dom'
 
   const Property = () => {
   const [highData, setHighData] = useState([]);
-  const [pending, isPending] = useState(true)
+  const [isPending, setIsPending] = useState(true)
   const [finalData, setFinalData] = useState({});
 
   const {id} = useParams(); 
@@ -37,7 +37,7 @@ import { useLocation } from 'react-router-dom'
       onSnapshot(docRef2, (doc) => {
         setFinalData(doc.data())
       })
-      isPending(false)
+      setIsPending(false)
     
     },[])
      

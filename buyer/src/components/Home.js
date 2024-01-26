@@ -16,8 +16,9 @@ const Home = () => {
           ...doc.data()
         }
       }))
+			setIsPending(false)
     })
-		setIsPending(false)
+		
   }, [])
 	
 	return ( 

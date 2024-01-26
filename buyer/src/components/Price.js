@@ -2,15 +2,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBed, faBath, faSquare , faLocationDot} from "@fortawesome/free-solid-svg-icons";
 import '../styles/price.css'
 
+
 const Price = ({data}) => {
 	return (
 		<div class="desc-container">
 			<div className="price-container">
 					<p className="price">{data.price}  </p>
 					<p className="price-icons">
-					<span><FontAwesomeIcon icon={faBed} />{data.beds}  </span>
-					<span><FontAwesomeIcon icon={faBath} />{data.baths}  </span>
-					<span><FontAwesomeIcon icon={faSquare} />{data.area} </span>
+					<span><FontAwesomeIcon icon={faBed} />  {data.beds}  </span>
+					<span><FontAwesomeIcon icon={faBath} />  {data.baths}  </span>
+					<span><FontAwesomeIcon icon={faSquare} />  {data.area} </span>
 					</p>
 					<p className="icon">
 					<span><FontAwesomeIcon icon={faLocationDot} /> {data.location}</span>

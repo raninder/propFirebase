@@ -9,13 +9,12 @@
   display:flex;
   justify-content: space-around;
   align-items: center;
-  background-color: blueviolet;
+  background-color: #7731E4;
 }
 .navlogo>img{
   width: 40%;
 }
 .notif{
-  margin:10px;
   display:flex;
 }
 .bell-icon{
@@ -28,8 +27,8 @@
 }
 .search-icon{
   position:absolute;
-  left:220px;
-  top:40px;
+  left:210px;
+  top:35px;
 }
 .search {
   width: 250px;
@@ -63,7 +62,7 @@
   }
   .search-icon{
     position:absolute;
-    left:180px;
+    right:20px;
     top:20px;
   }
 }

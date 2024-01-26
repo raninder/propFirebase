@@ -46,10 +46,10 @@ const Map = () => {
     
   ];
   
-	const mapStyles = {        
-    height: "55vh",
-    width: "50vw",
-  };
+	// const mapStyles = {        
+  //   height: "55vh",
+  //   width: "50vw",
+  // };
 	
   const defaultCenter = {
     lat: 43.668163994, lng: -79.370331852

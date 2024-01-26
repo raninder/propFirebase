@@ -22,6 +22,7 @@ iframe{
 
 .price-container>.price{
   font-size: 18px;
+  font-weight: bold;
   color:blueviolet;
 }
 .price-container>.price-icons, .price-container>.icon{

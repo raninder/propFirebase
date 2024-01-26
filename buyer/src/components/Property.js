@@ -20,7 +20,7 @@ import { useLocation } from 'react-router-dom'
   const [highData, setHighData] = useState([]);
   const [isPending, setIsPending] = useState(true)
 
-  const {id} = useParams(); 
+  let {id} = useParams(); 
   const location = useLocation()
   const { data } = location.state
 

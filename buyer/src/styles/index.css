@@ -5,8 +5,8 @@
   /* font-size:12px; */
 }
 body {
-  /* font-family: "Poppins", sans-serif; */
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family:"dm sans";
+  /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
   background-color: lightgrey;
 }
 .overview-container, .highlights-container, .details-container, .similar{

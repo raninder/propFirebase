@@ -6,6 +6,11 @@ import '../styles/footer.css'
 const Footer = () => {
   return ( 
     <div className="footer">
+      <div className="wave">
+          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+         </svg>
+      </div>
       <div className="content">
         <h3>Get the App now</h3>
         <p className="stores">
@@ -64,7 +69,7 @@ const Footer = () => {
 					</div>  
         </div>
       </div>
-      <img className = "mobile"  src= 'https://www.reso.com.au/static/c0f90c726df9a97816fd4e3573ed6edd/f8d9b/home-agent-dashboard.png' alt='mobile' />
+      <img className = "mobile"  src= 'https://s3-alpha-sig.figma.com/img/8b9b/cab7/6878ae0b42d8961105fa4679f4afc0cc?Expires=1707091200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=fwwt6PLyLhUXMRZ6BGk82WHxxaw8b7jWUTQLcsn9i-oMAKT4NQwGU~Ir2HM86IYpXcw~C5DA3oINZRvQ8bmtmZh~CnalpZqDMRrc8cXLVgCFUtzrQjpvBpu6flZkrWywUk3JeQOy5L1hr9rdpDDdfEAtu6TdzPhLbo-PuREuJKOKkhZTiCLmSX57W1wMFfKHS6WWfkePdMfBMPPmb1eWbL0P-tQjCMetbdrYLBKt91~8bo9egvI-X0RYjj-VJ67aT5lkwUKaTIAkYt8GZMbck-Z59ZJ7ia0CBy3kLDQr-fODI7diL0lhaec-HNXg0VIGdNmYjZzNNvfsiuZ9V4ABmw__' alt='mobile' />
     </div>
    );
 }

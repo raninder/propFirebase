@@ -12,7 +12,7 @@ const Header = ({data}) => {
   const handleClick = () => {
     navigate('/images')
   }
-console.log("header data", data)
+
 	return ( 
 		<>
       <div className='content grid5 mtop'>

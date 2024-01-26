@@ -1,7 +1,6 @@
 import '../styles/range.css'
 const Range = ({ title,min, max,step,value1,value2,value3,handleChange }) => {
   
-	console.log("value", value1);
   return (
     <div className="slider-container">
 			<div className="heading">

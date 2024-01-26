@@ -19,12 +19,17 @@ import { useLocation } from 'react-router-dom'
   const Property = () => {
   const [highData, setHighData] = useState([]);
   const [isPending, setIsPending] = useState(true)
-  const [finalData, setFinalData] = useState({});
 
   const {id} = useParams(); 
+  const location = useLocation()
+  const { data } = location.state
 
+  //filter document data from properties collection based on id
+  const filtered = data.filter((ele) => ele.id === id )
+  const obj = {...filtered[0]}
+	
   const docRef1 = doc(db, "highlights", id)
-  const docRef2 = doc(db, "properties", id)
+  // const docRef2 = doc(db, "properties", id)
 
   useEffect(()=>{
 
@@ -32,25 +37,21 @@ import { useLocation } from 'react-router-dom'
       onSnapshot(docRef1, (doc) => {
         setHighData(doc.data())
       })
-
-      //get single document from properties collection in firebase
-      onSnapshot(docRef2, (doc) => {
-        setFinalData(doc.data())
-      })
+      // onSnapshot(docRef2, (doc) => {
+      //   setFinalData(doc.data())
+      // })
       setIsPending(false)
-    
     },[])
      
   return ( 
     <div>
       {isPending && <div>Loading....</div>}
-      {/* { error && <div>{error}</div>} */}
-      { finalData && <Header data={finalData}/> }
-      {finalData && (
+      { data && <Header data={obj}/> }
+      {data && (
       <div className="main">
         <div className="left">
-          <Price data={finalData} />
-          <Overview data={finalData}></Overview>
+          <Price data={obj} />
+          <Overview data={obj}></Overview>
           <Highlights data={highData}/>
           <Details id={id}/>
           <Similar />

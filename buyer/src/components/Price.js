@@ -1,6 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBed, faBath, faSquare , faLocationDot} from "@fortawesome/free-solid-svg-icons";
-// import {dataprop1} from './Data'
 import '../styles/price.css'
 
 const Price = ({data}) => {

@@ -3,7 +3,7 @@ import { faSquareParking,faCircle} from "@fortawesome/free-solid-svg-icons";
 import '../styles/highlights.css'
 
 const Highlights = ({data}) => {
-	console.log("props data", data.parking);
+
 	return (
 		<div className="highlights-container">
 			<h3> Home Highlights</h3>

@@ -9,7 +9,7 @@ const PropertyList = ({properties}) => {
           <div className="props-list">
             { properties.map((item) => (
               <div className="preview" key={item.id} >
-                <Link to={`/properties/${item.id}`} >
+                <Link to={`/properties/${item.id}`} state={{ data: properties }}>
                   <img src={item.cover} alt='property'></img>
                 </Link>
               </div>  

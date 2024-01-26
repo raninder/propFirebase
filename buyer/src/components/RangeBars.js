@@ -12,31 +12,26 @@ function RangeBars() {
   const handleMarketChange = e => {
     e.preventDefault();
     const mvalue = parseFloat(e.target.value);
-		console.log("nvalue", mvalue);
 		setMarketValue(mvalue);
   };
 	const handlePercentChange = e => {
     e.preventDefault();
     const pvalue = parseFloat(e.target.value);
-		console.log("pvalue", pvalue);
 		setPercentValue(pvalue);
   };
 	const handleDepositChange = e => {
     e.preventDefault();
     const dvalue = parseFloat(e.target.value);
-		console.log("dvalue", dvalue);
 		setDepositValue(dvalue);
   };
 	const handleMortgageChange = e => {
     e.preventDefault();
     const mgvalue = parseFloat(e.target.value);
-		console.log("pvalue", mgvalue);
 		setMortgageValue(mgvalue);
   };
 	const handleAmortChange = e => {
     e.preventDefault();
     const avalue = parseFloat(e.target.value);
-		console.log("nvalue", avalue);
 		setAmortValue(avalue);
   };
 
@@ -49,7 +44,6 @@ function RangeBars() {
 				step={1000}
        	handleChange={handleMarketChange}
        	value1={marketValue} 
-				// value2={""}
 				title= {"Full Market Value" }
 			/>
 			<Range
@@ -67,7 +61,6 @@ function RangeBars() {
 				step={1000}
        	handleChange={handleDepositChange}
        	value1={depositValue} 
-				// value2={""}
 				title= {"Deposit Amount" }
 			/>
 			<Range

@@ -15,7 +15,7 @@ const Overview = ({data}) => {
 			</div>
   
 			<p className="overview-content">
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit fuga inventore, deserunt modi mollitia quo vero nulla, distinctio sunt error esse rerum quia incidunt eligendi dolores obcaecati sed optio ducimus.
+				{data.description}
 			</p>
 			<br/>
 			<hr/>
@@ -28,7 +28,7 @@ const Overview = ({data}) => {
 					</div>
 					<div className="walkscore">
 						<div>Walk Score</div>
-						<div>70/100</div>
+						<div>{data.walk_score}</div>
 					</div>	
 				</div>
 			
@@ -38,7 +38,7 @@ const Overview = ({data}) => {
 					</div>
 					<div className="walkscore">
 						<div>Bike Score</div>
-						<div>83/100</div>
+						<div>{data.bike_score}</div>
 					</div>	
 				</div>
 			
@@ -48,7 +48,7 @@ const Overview = ({data}) => {
 					</div>
 					<div className="walkscore">
 						<div>Bus Score</div>
-						<div>88/100</div>
+						<div>{data.bus_score}</div>
 					</div>
 				</div>
 			</div>	

@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import '../styles/propertylist.css'
 
-const PropertyList = ({properties,title}) => {
+const PropertyList = ({properties}) => {
 	console.log("properties",properties)
   
     return (
@@ -10,7 +10,7 @@ const PropertyList = ({properties,title}) => {
           <div className="props-list">
             { properties.map((item) => (
               <div className="preview" key={item.id} >
-                <Link to={`/properties/${item.id}`}>
+                <Link to={`/properties/${item.id}`} state={{ data: properties.filter(ele =>ele.id==item.id) }}>
                   <img src={item.cover} alt='property'></img>
                 </Link>
               </div>  

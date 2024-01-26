@@ -1,15 +1,32 @@
 import PropertyList from './PropertyList';
-import useFetch from '../useFetch';
-const Home = () => {
+import { onSnapshot, collection } from "firebase/firestore";
+import {useEffect, useState} from 'react'
+import {db} from '../firebase';
 
-	const {data,isPending,error} = useFetch('http://localhost:8000/properties')
-	console.log("data1", data)
+const Home = () => {
+	const [propData, setPropData] = useState([])
+	const [isPending, setIsPending] = useState(true)
+	
+	const colRef = collection(db, 'properties')
+	useEffect(() => {
+    onSnapshot(colRef, snapshot => {
+      setPropData(snapshot.docs.map(doc => {
+        return {
+          id: doc.id,
+          ...doc.data()
+        }
+      }))
+    })
+		setIsPending(false)
+  }, [])
+	
 	return ( 
 			<div className="home">
-				{error && <div>{error}</div>}
+				<h1>Home</h1>
+			
 			{isPending && <div> Loading... </div> }	
 			
-			{data && <PropertyList properties={data}/> }
+			{propData && <PropertyList properties={propData}/> } 
 	
     </div>	
 	 );

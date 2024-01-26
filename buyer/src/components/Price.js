@@ -9,8 +9,8 @@ const Price = ({data}) => {
 			<div className="price-container">
 					<p className="price">{data.price}  </p>
 					<p className="price-icons">
-					<span><FontAwesomeIcon icon={faBed} />{data.bedrooms}  </span>
-					<span><FontAwesomeIcon icon={faBath} />{data.washrooms}  </span>
+					<span><FontAwesomeIcon icon={faBed} />{data.beds}  </span>
+					<span><FontAwesomeIcon icon={faBath} />{data.baths}  </span>
 					<span><FontAwesomeIcon icon={faSquare} />{data.area} </span>
 					</p>
 					<p className="icon">

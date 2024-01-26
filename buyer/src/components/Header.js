@@ -7,15 +7,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHeart, faShareNodes, faCircle} from "@fortawesome/free-solid-svg-icons";
 
 const Header = ({data}) => {
-  // const [showCarousel, setShowCarousel] = useState(false)
   const navigate = useNavigate();
-  
+
   const handleClick = () => {
-    // console.log("images....",imagesProp1)
-    // e.preventDefault()
     navigate('/images')
   }
-
+console.log("header data", data)
 	return ( 
 		<>
       <div className='content grid5 mtop'>
@@ -29,7 +26,6 @@ const Header = ({data}) => {
             </button> 
             <div className="img-div">
 						  <img className="img2" src={data.img2} alt='' />
-              {/* <div className="img3-container"> */}
 						    <img className="img3" src={data.img3} alt=''/>
                 <button className="img-button" onClick = {handleClick}> See all 36 images </button> 
               <div className="like-icons">
@@ -37,7 +33,6 @@ const Header = ({data}) => {
               <FontAwesomeIcon className="hicon" icon={faShareNodes} size="lg"/>
               <FontAwesomeIcon className="hicon" icon={faCircle} />
               </div>
-              {/* </div> */}
             </div>
           </div>
       </div>
